@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -46,7 +46,6 @@ const Navbar = () => {
           >
             6FEET
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
