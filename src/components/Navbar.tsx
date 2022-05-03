@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import Drawer from "@mui/material/Drawer";
 
 const pages = ['Mangas', 'Figures', 'Acessórios'];
 const settings = ['Perfil', 'Lista de Desejos', 'Pedidos', 'Sair'];
@@ -56,7 +57,7 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
+            <Drawer
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -79,7 +80,7 @@ const Navbar = () => {
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Drawer>
           </Box>
           <Typography
             variant="h6"
