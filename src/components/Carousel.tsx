@@ -29,7 +29,8 @@ import React from 'react';
       root: {
         maxWidth: 1000,
         flexGrow: 1,
-        marginLeft: '20%',
+        marginLeft: '15%',
+        marginRight: '15%',
         alignItems: 'center'
       },
       header: {
