@@ -20,6 +20,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
     "react-swipeable-views": "^0.14.0",
+    "react-theme": "^0.1.4",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },

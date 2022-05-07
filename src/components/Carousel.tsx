@@ -29,7 +29,7 @@ import React from 'react';
       root: {
         maxWidth: 1000,
         flexGrow: 1,
-        // marginLeft: 250,
+        marginLeft: '20%',
         alignItems: 'center'
       },
       header: {
@@ -43,6 +43,7 @@ import React from 'react';
         height: 400,
         alignItems: 'center',
         display: 'flex',
+        justifyContent: 'right',
         maxWidth: 1000,
         overflow: 'hidden',
         width: '100%',
