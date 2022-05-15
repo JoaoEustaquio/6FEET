@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,6 +13,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from "@mui/material/Drawer";
+import Divider from '@mui/material/Divider';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 const pages = ['Mangas', 'Figures', 'Acessórios'];
 const settings = ['Perfil', 'Lista de Desejos', 'Pedidos', 'Sair'];
@@ -19,6 +22,15 @@ const settings = ['Perfil', 'Lista de Desejos', 'Pedidos', 'Sair'];
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+
+const DrawerHeader = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar,
+  justifyContent: 'flex-end',
+}));
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -75,6 +87,12 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
+              <DrawerHeader>
+                <IconButton onClick={handleCloseNavMenu}>
+                  <ChevronLeftIcon />
+                </IconButton>
+              </DrawerHeader>
+              <Divider />
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
