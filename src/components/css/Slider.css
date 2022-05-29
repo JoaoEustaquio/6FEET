@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .slide {
+  background-color: #d91948;
+  height: 40vh;
+}
+
+.carousel .slide img {
+  max-height: 100%;
+  width: auto;
+}
+
+.image {
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .carousel {
+    padding-top: 0px;
+    height: 66vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel {
+    height: 50vh;
+  }
+}

@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar.tsx'
-import Carousel from './components/Carousel.tsx'
+import Slider from './components/Carousel.tsx'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       </div>
       <div>
         <body>
-          <Carousel />
+          <Slider padding-top="20px" />
         </body>
       </div>
     </>
